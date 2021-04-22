@@ -1,0 +1,39 @@
+.mainBody {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top {
+    position: relative;
+    border-collapse: collapse; 
+}
+
+.blogT {
+    text-shadow: 2px 2px #ec3e3e;
+    padding: 20px;
+    height: 100px;
+    font-size: xx-large;
+}
+
+.profileT {
+    text-shadow: 3px 2px #ec3e3e;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 30vw;
+    font-size: xx-large;
+}
+
+.blockProfiles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(235, 227, 123);
+
+}
+
+#blogDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}

@@ -1,0 +1,21 @@
+.submitBlog {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgb(235, 227, 123);
+    color: black;
+    text-align: center;
+}
+
+.addNewBlog {
+    text-shadow: 2px 2px #ec3e3e;
+    font-size: xx-large;
+}
+
+.desiredBlog {
+    border-style: dashed;
+    border-color: rgb(77, 71, 71);
+    width: 50vw;
+    align-self: center;
+}

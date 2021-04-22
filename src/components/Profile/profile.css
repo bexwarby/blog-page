@@ -1,0 +1,21 @@
+/* General Style */
+
+.profile {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Tables */
+
+.inputProfile {
+    padding: 25px;
+    margin: 20px;
+    border-style: dashed;
+    width: 15vw;
+}
+
+thead {
+    text-shadow: 1px 1px #ec3e3e;
+}

@@ -1,0 +1,55 @@
+/* General Style */
+
+.introBlock {
+    display: inline-block;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+
+.leftContent {
+    float: left;
+    margin-left: 15vw;
+}
+
+.rightContent {
+    float: right;
+    margin-right: 25vw;
+}
+
+/* Titles and text */
+
+.titleMain {
+    margin-left: 50px;
+    text-shadow: 2px 2px #ec3e3e;
+    font-size: x-large;
+}
+
+.titleSecond {
+    margin-left: 50px;
+    text-shadow: 2px 2px #ec3e3e;
+    font-size: x-large;
+}
+
+.description {
+    margin-left: 50px;
+}
+
+.styleSpan {
+    font-size:xx-large;
+    color: rgb(255, 0, 0);
+    text-shadow: 4px 2px rgb(22, 20, 20);
+    background-color: rgb(61, 66, 66);
+    border-radius: 30%;
+}
+
+/* Images */
+
+.imgIntro {
+    width: 100vw;
+}
+
+.bStaff {
+    width: 400px;
+}
+
+

@@ -1,0 +1,13 @@
+.blogInput {
+    display: relative;
+    flex-grow: 1;
+    width: 25vw;
+    padding: 10px;
+}
+
+.blogTitle {
+    margin-left: 50px;
+    text-shadow: 1px 1px hsl(71, 70%, 72%);
+    font-size: x-large;
+}
+
