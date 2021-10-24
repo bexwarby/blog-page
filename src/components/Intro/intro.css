@@ -1,37 +1,36 @@
 /* General Style */
 
 .introBlock {
-    display: inline-block;
-    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
 }
 
-.leftContent {
-    float: left;
-    margin-left: 15vw;
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.rightContent {
-    float: right;
-    margin-right: 25vw;
+.contentBlock {
+    width: 400px;
+    height: 420px;
 }
 
 /* Titles and text */
 
-.titleMain {
-    margin-left: 50px;
+.title {
     text-shadow: 2px 2px #ec3e3e;
     font-size: x-large;
-}
-
-.titleSecond {
-    margin-left: 50px;
-    text-shadow: 2px 2px #ec3e3e;
-    font-size: x-large;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .description {
-    margin-left: 50px;
+    margin-top: 70px;
 }
 
 .styleSpan {

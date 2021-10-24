@@ -1,13 +1,23 @@
+.blogSection {
+    flex: 200px;
+}
 .blogInput {
     display: relative;
     flex-grow: 1;
-    width: 25vw;
+    width: 300px;
     padding: 10px;
+    margin: auto;
 }
-
 .blogTitle {
-    margin-left: 50px;
+    text-align: center;
     text-shadow: 1px 1px hsl(71, 70%, 72%);
     font-size: x-large;
+    color: rgb(224, 224, 97);
 }
-
+.author {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #a2dd90;
+}

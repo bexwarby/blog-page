@@ -10,9 +10,9 @@ import "./header.css";
 */
  function Header(){
     return (
-        <h1>
+        <h3>
             A day in the life of a Trainee Developer
-        </h1>
+        </h3>
     );
 }
 

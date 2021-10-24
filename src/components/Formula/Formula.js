@@ -40,49 +40,36 @@ function Formula(props) {
         <div>
 
             {/* Form to submit new blog */}
-            <form className="submitBlog">
+            <div className="submitBlog">
 
-                <h2 className="addNewBlog">
-                    Submit your blog
-                </h2>
-
+                <h2 className="addNewBlog">Submit your blog</h2>
                 <hr />
 
                 {/* Show the submitted blog */}
                 <div className="desiredBlog">
-
-                    <h2>View Your Submitted Blog</h2>
-                    <h3>Title: {title}</h3>
-                    <p>Written by: {writer}</p>
-                    <p>Text written: {textSubmitted}</p>
-                    <p>Date written: {dateSubmitted}</p>
-
+                    <h2>Your Blog:</h2>
+                    <h3>{title}</h3>
+                    <p>By:{writer}</p>
+                    <p className="whiteSpace">{textSubmitted}</p>
+                    <p>On {dateSubmitted}</p>
                 </div>
                 <hr />
 
-                {/* Title Input */}
-                <div className="infoForm">
-                    <label>Title:</label>
+                {/* Form Input */}
+                <form className="infoForm">
+                    {/* TITLE */}
                     <input
                         type="text"
                         placeholder="title"
                         onChange={handleTitleInput}
                     />
-                </div>
-
-                {/* Author Input */}
-                <div className="nameForm">
-                    <label>Your name:</label>
+                    {/* AUTHOR */}
                     <input
                         type="text"
                         placeholder="your name"
                         onChange={handleAuthorName}
                     />
-                </div>
-
-                {/* Blog Text Input */}
-                <div className="blogForm">
-                    <label>Blog:</label>
+                    {/* BLOG TEXT*/}
                     <textarea
                         placeholder="write your blog here"
                         onChange={handleBlogInput}
@@ -90,24 +77,18 @@ function Formula(props) {
                         cols="30"
                     >
                     </textarea>
-                </div>
-
-                {/* Date Input */}
-                <div className="blogForm">
-                    <label>Date:</label>
+                    {/* DATE WRITTEN */}
                     <input
                         type="date"
                         onChange={handleDateInput}
                     />
-                </div>
-
-                <div className="buttonForm">
+                    {/* SUBMIT BUTTON */}
                     <button onClick={handleSubmitButton}>
                         Submit
                     </button>
-                </div>
+                </form>
 
-            </form>
+            </div>
         </div>
     );
 }

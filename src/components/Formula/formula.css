@@ -1,6 +1,6 @@
+/* general style */
 .submitBlog {
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
     margin-top: 100px;
     background-color: rgb(235, 227, 123);
@@ -8,14 +8,33 @@
     text-align: center;
 }
 
+/* title */
 .addNewBlog {
+    margin-top: 30px;;
     text-shadow: 2px 2px #ec3e3e;
     font-size: xx-large;
 }
 
+/* display desired blog */
 .desiredBlog {
     border-style: dashed;
     border-color: rgb(77, 71, 71);
-    width: 50vw;
+    width: 400px;
+    flex: 200px;
     align-self: center;
+}
+.whiteSpace {
+    white-space: pre-wrap;
+}
+
+/* form */
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input, textarea, button {
+    width: 250px;
+    margin:5px;
 }

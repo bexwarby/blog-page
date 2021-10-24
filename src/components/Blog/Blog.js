@@ -28,7 +28,7 @@ function Blog(props) {
 
                 <h1 className="blogTitle">{props.title}</h1>
 
-                <p>Written by {props.author} ({props.date})</p>
+                <p className="author">By {props.author} ({props.date})</p>
 
                 <p>{props.children}</p>
 

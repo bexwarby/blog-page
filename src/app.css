@@ -1,21 +1,17 @@
+/* OVERALL section */
 .mainBody {
     background-color: black;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* HEADER section */
 .top {
     position: relative;
     border-collapse: collapse; 
 }
 
-.blogT {
-    text-shadow: 2px 2px #ec3e3e;
-    padding: 20px;
-    height: 100px;
-    font-size: xx-large;
-}
-
+/* PROFILE section */
 .profileT {
     text-shadow: 3px 2px #ec3e3e;
     align-items: center;
@@ -23,17 +19,41 @@
     margin-left: 30vw;
     font-size: xx-large;
 }
-
+.profileB {
+    color: black;
+    text-shadow: 3px 2px #ec3e3e;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 20px;
+}
 .blockProfiles {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: rgb(235, 227, 123);
-
 }
-
-#blogDiv {
+.profiles {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* BLOG section */
+#blogOverall {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.blogT {
+    text-shadow: 2px 2px #ec3e3e;
+    padding: 20px;
+    height: 100px;
+    font-size: xx-large;
+}
+#blogDiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
 }

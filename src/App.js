@@ -11,6 +11,7 @@ import Menu from "./components/Menu/Menu";
 import Blog from "./components/Blog/Blog";
 import Formula from "./components/Formula/Formula";
 import Intro from "./components/Intro/Intro";
+// Bootstrap import
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* 
@@ -18,17 +19,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 */
 function App() {
 
-    return (
-
+    return ( 
         <div className="mainBody">
+            {/** MENU AND HEADER BLOCK */}
             <div className="top">
                 <Menu />
                 <Header />
             </div>
-            <Intro id="about" />
-            <div id="profilesBlock">
-                <h2 className="profileT">Our Profiles:</h2>
-                <div className="blockProfiles">
+            {/** INTRO BLOCK */}
+            <Intro />
+            {/** PROFILE BLOCK */}
+            <div className="blockProfiles">
+                <h2 className="profileB">Our Profiles:</h2>
+                <div className="profiles">
                     <Profile name="Bex"
                         surname="Warby"
                         email="r@lobocal.academy"
@@ -80,57 +83,62 @@ function App() {
                     />
                 </div>
             </div>
-            <div id="blogDiv">
+            {/** BLOG BLOCK */}
+            <div id="blogOverall">
                 <h2 className="blogT">Our Blogs:</h2>
-                <Blog
-                    title="JavaScript Vanilla"
-                    author="Bex + Fred"
-                    date="24.03.21"
-                >
-                    Understanding algorithms and the logics behind JS
-                    formed the beginning of our intense training into
-                    JS Vanilla.
-                    <br />
-                    <br />
-                    So what is JS Vanilla?
-                    <br />
-                    <br />
-                    We'll let you know soon!
-                </Blog>
-                <Blog
-                    title="React"
-                    author="Cyril, Clément + Thibault"
-                    date="12.03.21"
-                >
-                    <span className="rName">React</span> - what a
-                    powerful and exciting Framework.
-                    <br />
-                    <br />
-                    As opposed to similar apps Angular and Vue,
-                    React allows us to manipulate highly powerful
-                    applications with several pages.
-                    <br />
-                    <br />
-                    It is the <span className="future">future</span> !
-                </Blog>
-                <Blog
-                    title="Post Training"
-                    author="Jean-François + Virginie"
-                    date="24.03.21"
-                >
-                    So, what is he like you may be wondering?
-                    <br />
-                    <br />
-                    Many of us will be hoping to complete
-                    internships following this 10-week intense
-                    course, in order to acquire the skills need to
-                    begin as a Junior Developer.
-                    <br />
-                    <br />
-                    How exciting!
-                </Blog>
+                <div id="blogDiv">
+                    <Blog
+                        title="JavaScript Vanilla"
+                        author="Bex + Fred"
+                        date="24.03.21"
+                    >
+                        Understanding algorithms and the logics behind JS
+                        formed the beginning of our intense training into
+                        JS Vanilla.
+                        <br />
+                        <br />
+                        So what is JS Vanilla?
+                        <br />
+                        <br />
+                        We'll let you know soon!
+                    </Blog>
+                    <Blog
+                        title="React"
+                        author="Cyril, Clément + Thibault"
+                        date="12.03.21"
+                    >
+                        <span className="rName">React</span> - what a
+                        powerful and exciting Framework.
+                        <br />
+                        <br />
+                        As opposed to similar apps Angular and Vue,
+                        React allows us to manipulate highly powerful
+                        applications with several pages.
+                        <br />
+                        <br />
+                        It is the <span className="future">future</span> !
+                    </Blog>
+                    <Blog
+                        title="Post Training"
+                        author="Jean-François + Virginie"
+                        date="24.03.21"
+                    >
+                        So, what is he like you may be wondering?
+                        <br />
+                        <br />
+                        Many of us will be hoping to complete
+                        internships following this 10-week intense
+                        course, in order to acquire the skills need to
+                        begin as a Junior Developer.
+                        <br />
+                        <br />
+                        How exciting!
+                    </Blog>
+                </div>
             </div>
+            {/** ENTER OWN BLOG BLOCK */}
             <Formula id="addYourBlog" />
+            {/** FOOTER BLOCK */}
             <Footer id="contact" />
         </div>
     );

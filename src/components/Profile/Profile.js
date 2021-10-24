@@ -30,6 +30,8 @@ function Profile(props) {
         console.log("Quote: " + quote)
     }
 
+    
+
     return (
 
         <main className="profile">
@@ -50,19 +52,19 @@ function Profile(props) {
                 {/* Personal Data */}
                 <tbody>
                     <tr className="email">
-                        <td className="tEmail">Email:</td>
+                        <th>Email:</th>
                         <td className="resultProfile">{props.email}</td>
                     </tr>
                     <tr className="age">
-                        <td className="tAge">Age:</td>
+                        <th>Age:</th>
                         <td className="resultProfile">{props.age}</td>
                     </tr>
                     <tr className="hobbies">
-                        <td className="tHobbies">Hobbies:</td>
+                        <th>Hobbies:</th>
                         <td className="resultProfile">{props.hobbies}</td>
                     </tr>
                     <tr className="quote">
-                        <td className="tQuote">Quote:</td>
+                        <th>Quote:</th>
                         <td className="resultProfile">{props.quote}</td>
                     </tr>
                 </tbody>
